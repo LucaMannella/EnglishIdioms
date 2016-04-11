@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">EnglishIdioms</string>
+    <string name="italian_flag">Italian flag</string>
+    <string name="french_flag">French flag</string>
+    <string name="spanish_flag">Spanish flag</string>
+    <string name="german_flag">German Flag</string>
+    <string name="start">Start</string>
+    <string name="settings">Settings</string>
+    <string name="tell_to_a_friend">Tell to a friend</string>
 </resources>

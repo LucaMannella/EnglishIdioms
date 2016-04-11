@@ -15,22 +15,22 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start"
-        android:onClick="gameActivity"
+        android:text="@string/start"
+        android:onClick="startGameActivity"
         android:layout_weight="1" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Settings"
-        android:onClick="settingsActivity"
+        android:text="@string/settings"
+        android:onClick="startLanguageActivity"
         android:layout_weight="1" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tell to a friend"
-        android:onClick="appInviteActivity"
+        android:text="@string/tell_to_a_friend"
+        android:onClick="startAppInviteActivity"
         android:layout_weight="1" />
 
 </LinearLayout>

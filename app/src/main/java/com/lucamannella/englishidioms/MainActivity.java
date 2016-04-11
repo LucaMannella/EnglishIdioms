@@ -14,16 +14,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void gameActivity(View view) {
+    public void startGameActivity(View view) {
         Intent intent = new Intent(this, GameActivity.class);
         startActivity(intent);
     }
 
-    public void settingsActivity (View view) {
-        Toast.makeText(this, "Implement me! :(", Toast.LENGTH_SHORT).show();
+    public void startLanguageActivity (View view) {
+        Intent intent = new Intent(this, LanguageActivity.class);
+        startActivity(intent);
     }
 
-    public void appInviteActivity (View view) {
+    public void startAppInviteActivity (View view) {
         Toast.makeText(this, "Implement me! :(", Toast.LENGTH_SHORT).show();
     }
 

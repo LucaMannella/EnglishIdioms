@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lucamannella.englishidioms.MainActivity"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"  >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/italy_flag"
+        android:onClick="setItalian"
+        android:layout_weight="1"
+        android:contentDescription="@string/italian_flag" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:src="@drawable/france_flag"
+        android:onClick="setFrench"
+        android:layout_weight="1"
+        android:contentDescription="@string/french_flag" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:src="@drawable/spain_flag"
+        android:onClick="setSpanish"
+        android:layout_weight="1"
+        android:contentDescription="@string/spanish_flag" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/germany_flag"
+        android:onClick="setGerman"
+        android:layout_weight="1"
+        android:contentDescription="@string/german_flag" />
+
+</LinearLayout>
