@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:text="2 - 5 - 4 - 3 - 4" />
 
-        <ImageView
+        <ImageView android:id="@+id/rebus_picture"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:src="@drawable/example" />
@@ -40,7 +40,12 @@
         <TextView android:id="@+id/explanation_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Put explenation here"
+            android:text="Put explenation here Put explenation herePut explenation herePut explenation herePut explenation here
+            Put explenation herePut explenation herePut explenation herePut explenation herePut explenation herePut explenation here
+            Put explenation herePut explenation herePut explenation herePut explenation herePut explenation herePut explenation here
+            Put explenation herePut explenation herePut explenation herePut explenation herePut explenation herePut explenation here
+            Put explenation herePut explenation herePut explenation herePut explenation herePut explenation herePut explenation here
+            Put explenation herePut explenation herePut explenation herePut explenation herePut explenation herePut explenation here"
             android:visibility="gone" />
 
         <Button android:id="@+id/next_button"
