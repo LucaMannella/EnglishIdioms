@@ -1,5 +1,6 @@
 package com.lucamannella.englishidioms;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,7 +14,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void tostamelo(View view) {
-        Toast.makeText(this, "Ciao sono un toast!", Toast.LENGTH_SHORT).show();
+    public void gameActivity(View view) {
+        Intent intent = new Intent(this, GameActivity.class);
+        startActivity(intent);
     }
+
+    public void settingsActivity (View view) {
+        Toast.makeText(this, "Implement me! :(", Toast.LENGTH_SHORT).show();
+    }
+
+    public void appInviteActivity (View view) {
+        Toast.makeText(this, "Implement me! :(", Toast.LENGTH_SHORT).show();
+    }
+
 }
