@@ -5,6 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+/**
+ * This activity will manage the selection of the language.
+ * Created by Luca on 10/04/2016.
+ * @author Luca
+ */
 public class LanguageActivity extends AppCompatActivity {
 
     @Override
