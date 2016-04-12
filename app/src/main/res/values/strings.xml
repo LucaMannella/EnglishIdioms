@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">EnglishIdioms</string>
+    <string name="app_name_splash_screen">English Idioms Splash Screen</string>
     <string name="italian_flag">Italian flag</string>
     <string name="french_flag">French flag</string>
     <string name="spanish_flag">Spanish flag</string>
