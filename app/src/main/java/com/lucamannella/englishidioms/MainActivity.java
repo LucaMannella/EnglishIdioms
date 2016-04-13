@@ -38,11 +38,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method will manage the google app invite.
+     * This method will allow the user to invite your friends.
      * @param view - The button that was pressed to start this method.
      */
-    public void startAppInviteActivity (View view) {
-        Toast.makeText(this, "Implement me! :(", Toast.LENGTH_SHORT).show();
+    public void inviteFriends(View view) {
+        String subject = getResources().getString(R.string.email_subject_invite_friends);
+        String text = getResources().getString(R.string.email_invite_friends_text);
+
+        if( !Utility.sendEmail(null, subject, text, this) )
+            Toast.makeText(this, R.string.email_not_sent, Toast.LENGTH_SHORT).show();
     }
 
 }

@@ -22,6 +22,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="16sp"
         android:text="@string/settings"
         android:onClick="startLanguageActivity"
         android:layout_weight="1" />
@@ -30,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tell_to_a_friend"
-        android:onClick="startAppInviteActivity"
+        android:onClick="inviteFriends"
         android:layout_weight="1" />
 
 </LinearLayout>
