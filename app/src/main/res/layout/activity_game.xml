@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView android:id="@+id/game_scroll_view"
     xmlns:android="http://schemas.android.com/apk/res/android"
-
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    tools:context="com.lucamannella.englishidioms.GameActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,42 +15,66 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         android:orientation="vertical"  >
 
-        <TextView android:id="@+id/rebus_hint_text_view"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2 - 5 - 4 - 3 - 4" />
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"
+            android:text="Rebus #1"/>
 
         <ImageView android:id="@+id/rebus_picture"
             android:layout_width="300dp"
             android:layout_height="300dp" />
 
+        <TextView android:id="@+id/rebus_hint_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"
+            android:text="Rebus Hint" />
+
         <EditText android:id="@+id/solution_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:singleLine="true"/>
+            android:singleLine="true"
+            android:textSize="14sp"/>
 
-        <Button
+        <Button android:id="@+id/submit_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:text="Submit"
             android:onClick="checkSolution" />
+
+        <TextView android:id="@+id/translation_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+            android:text="Translation here!"
+            android:textSize="20dp"
+            android:visibility="gone"/>
 
         <TextView android:id="@+id/explanation_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:focusable="true"
+            android:textSize="14sp"
             android:text="Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
-                Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
-                Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
-                Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
-                Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
-                Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here"
-            android:visibility="gone" />1
+Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
+Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
+Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
+Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
+Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here"
+            android:visibility="gone" />
 
         <Button android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="Next"
             android:visibility="gone"
             android:onClick="nextActivity" />

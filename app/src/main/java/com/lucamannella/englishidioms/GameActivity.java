@@ -1,5 +1,6 @@
 package com.lucamannella.englishidioms;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -34,10 +35,17 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         ((ImageView)findViewById(R.id.rebus_picture)).setImageResource( vet[i] );
         ((TextView) findViewById(R.id.rebus_hint_text_view)).setText( rebusHints[i] );
+    }
 
-        EditText editText = ((EditText)findViewById(R.id.solution_edit_text));
+    /**
+     * This method should be called on the onCreate if you want that the solution will checked
+     * after a modification on the EditText.
+     * Actually it is not used.
+     */
+    private void checkSolutionOnSave() {
+        EditText editText = ((EditText) findViewById(R.id.solution_edit_text));
 
-        if(editText != null)
+        if (editText != null)
             // here I create an editorActionListener that response when the editText content changes
             editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 /**
@@ -52,8 +60,8 @@ public class GameActivity extends AppCompatActivity {
                     return false;
                 }
             });
+        return;
     }
-
 
     /**
      * This method checks if the solution is right or not.
@@ -69,6 +77,7 @@ public class GameActivity extends AppCompatActivity {
 
             solutionEditText.setTag(solutionEditText.getKeyListener());
             solutionEditText.setKeyListener(null);
+            findViewById(R.id.submit_button).setClickable(false);
 
             new Handler().post(new Runnable() {
                 @Override
@@ -96,10 +105,18 @@ public class GameActivity extends AppCompatActivity {
         EditText solutionEditText = (EditText) findViewById(R.id.solution_edit_text);
         solutionEditText.setKeyListener((KeyListener) solutionEditText.getTag());
         solutionEditText.setText("");
+        findViewById(R.id.submit_button).setClickable(true);
 
-        i = (i+1) % vet.length;
-        ((ImageView)findViewById(R.id.rebus_picture)).setImageResource( vet[i] );
-        ((TextView) findViewById(R.id.rebus_hint_text_view)).setText( rebusHints[i] );
+        i++;
+        if(i < vet.length) {
+            ((ImageView) findViewById(R.id.rebus_picture)).setImageResource(vet[i]);
+            ((TextView) findViewById(R.id.rebus_hint_text_view)).setText(rebusHints[i]);
+        }
+        else {  //Game completed! go the game over activity!
+            Intent intent = new Intent(this, GameOverActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 
 }
