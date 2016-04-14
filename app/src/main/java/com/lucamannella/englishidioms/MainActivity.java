@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public void startLanguageActivity (View view) {
         Intent intent = new Intent(this, LanguageActivity.class);
         startActivity(intent);
+        finish();
     }
 
     /**
