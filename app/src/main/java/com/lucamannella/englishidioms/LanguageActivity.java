@@ -1,5 +1,6 @@
 package com.lucamannella.englishidioms;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -19,22 +20,42 @@ public class LanguageActivity extends AppCompatActivity {
     }
 
     public void setItalian(View view) {
-        Toast.makeText(this, "Lingua italiana impostata con successo!", Toast.LENGTH_SHORT).show();
+        ( (MyApplication)getApplicationContext() ).changeLang("it_IT");
+        Toast.makeText(this, R.string.italian_language_set, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void setEnglish(View view) {
+        ( (MyApplication)getApplicationContext() ).changeLang("en_EN");
+        Toast.makeText(this, R.string.english_language_set, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
         finish();
     }
 
     public void setFrench(View view) {
-        Toast.makeText(this, "Unfortunately French is not yet avalaible! :(", Toast.LENGTH_SHORT).show();
-        finishActivity(0);
+        ( (MyApplication)getApplicationContext() ).changeLang("fr_FR");
+        Toast.makeText(this, R.string.language_not_yet_available, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void setSpanish(View view) {
-        Toast.makeText(this, "Unfortunately Spanish is not yet avalaible! :(", Toast.LENGTH_SHORT).show();
-        finishActivity(0);
+        ( (MyApplication)getApplicationContext() ).changeLang("es_ES");
+        Toast.makeText(this, R.string.language_not_yet_available, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void setGerman(View view) {
-        Toast.makeText(this, "Unfortunately German is not yet avalaible! :(", Toast.LENGTH_SHORT).show();
-        finishActivity(0);
+        ( (MyApplication)getApplicationContext() ).changeLang("de_DE");
+        Toast.makeText(this, R.string.language_not_yet_available, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

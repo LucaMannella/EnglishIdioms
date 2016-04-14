@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">English Idioms</string>
+    <string name="app_name_splash_screen">Schermata Iniziale di English Idioms</string>
+    <string name="email_feedback_text">Ciao!
+Ho provato la tua applicazione e vorrei dirti che </string>
+    <string name="game_over_text3">Grazie per aver giocato!</string>
+    <string name="french_flag">Bandiera francese</string>
+    <string name="game_over_feedback">Dimmi la tua opinione!</string>
+    <string name="game_over_congratulation">Congratulazioni! Ce l\'hai fatta!</string>
+    <string name="game_over_text1">Spero che ti sia piaciuta la mia applicazione e che ti sia stata utile!</string>
+    <string name="email_sent">E-mail inviata!</string>
+    <string name="email_not_sent">Impossibile inviare l\'e-mail!</string>
+    <string name="email_invite_friends_text">Ciao! Ho provato English Idioms... È un\'applicazione davvero figa! Ti consiglio davvero di provarla! Forza, scaricala dal Google Play Store!</string>
+    <string name="email_subject_feedback">Opinione su English Idioms</string>
+    <string name="email_subject_invite_friends">Prova English Idioms! È fantastica!</string>
+    <string name="explenation1"></string>
+    <string name="explenation2">Letterlamente significa “tagliarsi i denti” ma in realtà traduce il nostro “farsi le ossa” cioè farsi dell’esperienza e imparare l’ABC di qualcosa. </string>
+    <string name="explenation3">“Be on the same page” letteralmente significa “essere sulla stessa pagina” e infatti viene usato per tradurre il nostro “essere sulla stessa lunghezza d’onda” o anche “andare d’accordo”, “capirsi”.</string>
+    <string name="explenation4">“Hit the roof” (letteralmente “colpire il tetto”) significa arrabbiarsi molto o meglio “andare su tutte le furie”. In un inglese piu’ formale diremmo “to explode with anger”. Le Furie rappresentano nella mitologia dellantica Roma le forze che esprimono la vendetta, e costituiscono il corrispettivo delle Erinni dellantica Grecia. Lattività delle Furie, dunque, consisteva nel seminare zizzania tra gli esseri umani, facendoli arrabbiare e indirizzandoli sulla via della cattiveria e della rabbia. Si trattava di donne rappresentata come brutte e particolarmente vecchie, caratterizzate da uno sguardo torvo e tremendamente cattivo, con serpenti al posto dei capelli, dotate di ali di pipistrello e con in mano una torcia che usavano per accendere gli animi degli uomini che finivano nel loro mirino. Dunque, chi rimane, o rimaneva, accecato dalla collera, chi si fa, o faceva, prendere dallira e chi agisce, o agiva, in maniera impulsiva, commettendo spesso dei gesti inconsulti dovuti alla rabbia del momento, va, o andava, su tutte le Furie. Le Furie erano tre: Aletto, Tisifone e Megera. La leggenda vuole che esse fossero nate direttamente dal sangue di Urano, che sarebbe uscito nel corso dellevirazione compiute da Crono. Tuttavia, unaltra tradizione le definisce figlie della Notte. Come detto, erano la personificazione della vendetta, e in particolare simboleggiavano il rimorso inarrestabile che traeva origine dai delitti di sangue più crudeli. Per placarle venivano offerti loro vari sacrifici. Le Furie, geni alati rappresentati con la bocca aperta, mentre stanno emettendo urla tremende, portavano in mano tizzoni ardenti, o carboni o fruste. In effetti, si può facilmente notare che ancora oggi si usa il termine furia per indicare un comportamento, un pensiero o un atteggiamento di rabbia, veemenza e addirittura violenza, in grado di dare origine a un atto, un gesto o unazione spesso sconsiderata o comunque poco opportuna. Chi è furente è, in effetti, letteralmente sopraffatto dall’ira, o comunque da un’altra passione altrettanto violenta. Dalla parola derivano anche le espressioni infuriato, sfuriata e furore, tutti termini che hanno a che fare con collera improvvisa. Ecco, dunque, spiegata lorigine dellespressione andare su tutte le furie, che trova le proprie radici addirittura nella mitologia dell’antica Roma, a sua volta erede di quella diffusa nell’antica Grecia.</string>
+    <string name="explenation5">Ecco come si dice in inglese “buono come il pane”! Visto che nei paesi anglosassoni non sono degli estimatori di pane come siamo qui in Italia, ecco che per loro non c’è nulla di meglio, per un paragone, associare la bontà all’oro!</string>
+    <string name="game_over_text2">Se hai voglia di inviarmi una e-mail per dirmi quello che ti è piaciuto e quello che pensi possa essere meglio lo apprezzerei davvero! Puoi farlo cliccando sul pulsante qui sotto!</string>
+    <string name="german_flag">Bandiera tedesca</string>
+    <string name="go_back_to_menu">Torna al menù</string>
+    <string name="italian_flag">Bandiera italiana</string>
+    <string name="settings">Impostazioni</string>
+    <string name="spanish_flag">Bandiera spagnola</string>
+    <string name="start">Inizia</string>
+    <string name="tell_to_a_friend">Dillo a un amico</string>
+    <string name="wrong_answer">Risposta errata! Pensaci meglio!</string>
+    <string name="italian_language_set">Lingua italiana impostata con successo!</string>
+    <string name="submit">Controlla</string>
+    <string name="english_flag">Bandiera del Regno Unito</string>
+    <string name="next">Successivo</string>
+</resources>

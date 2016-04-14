@@ -17,6 +17,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"
+        android:src="@drawable/english_flag"
+        android:onClick="setEnglish"
+        android:layout_weight="1"
+        android:contentDescription="@string/english_flag" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/italy_flag"
         android:onClick="setItalian"
         android:layout_weight="1"
@@ -36,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="16dp"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/spain_flag"
         android:onClick="setSpanish"
         android:layout_weight="1"

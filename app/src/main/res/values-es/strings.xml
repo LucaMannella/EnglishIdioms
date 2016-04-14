@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">English Idioms</string>
+    <string name="app_name_splash_screen">Pantalla inicial de la aplicación</string>
+    <string name="email_subject_feedback">Comentarios acerca de English Idioms</string>
+    <string name="email_sent">El correo electrónico fue enviado!</string>
+    <string name="email_not_sent"> Imposible enviar el correo electrónico!</string>
+    <string name="french_flag">Bandera francés</string>
+    <string name="game_over_congratulation">Enhorabuena, usted lo hizo!</string>
+    <string name="game_over_feedback">Dame una respuesta!</string>
+    <string name="game_over_text3"> ¡Gracias por jugar!</string>
+    <string name="german_flag">Bandera alemana</string>
+    <string name="go_back_to_menu">Volver al menú</string>
+    <string name="email_subject_invite_friends">Trate English Idioms! ¡Es impresionante!</string>
+    <string name="italian_flag">Bandera italiana</string>
+    <string name="english_flag">Bandera del Reino Unido</string>
+    <string name="next">Siguiente</string>
+    <string name="settings">Ajustes</string>
+    <string name="spanish_flag"> Bandera española</string>
+    <string name="start">Comenzar</string>
+    <string name="submit">Enviar</string>
+    <string name="tell_to_a_friend">Dile a un amigo</string>
+    <string name="wrong_answer">¡Respuesta incorrecta! </string>
+</resources>

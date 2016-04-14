@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">English Idioms</string>
+    <string name="start">Commence</string>
+    <string name="settings">Réglages</string>
+    <string name="tell_to_a_friend">Dites à un ami</string>
+    <string name="submit">Soumettre</string>
+    <string name="app_name_splash_screen">cran de démarrage de l\'application</string>
+    <string name="email_subject_feedback">Commentaires English Idioms</string>
+    <string name="email_sent">Le courriel a été envoyé!</string>
+    <string name="email_not_sent">Impossible d\'envoyer l\'e-mail!</string>
+    <string name="french_flag">Drapeau français</string>
+    <string name="game_over_congratulation">Félicitation, vous l\'avez fait!</string>
+    <string name="game_over_feedback">Donnez-moi une évaluation!</string>
+    <string name="game_over_text3">Merci d\'avoir joué!</string>
+    <string name="german_flag">Drapeau allemand</string>
+    <string name="go_back_to_menu"> Retour au menu</string>
+    <string name="email_subject_invite_friends">Essayez English Idioms! Il est génial!</string>
+    <string name="italian_flag">Drapeau italien</string>
+    <string name="english_flag">Drapeau de Royaume-Uni</string>
+    <string name="next">Prochain</string>
+    <string name="spanish_flag">Drapeau espagnol</string>
+    <string name="wrong_answer">Mauvaise réponse! Penses-y!</string>
+</resources>

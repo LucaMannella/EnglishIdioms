@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">English Idioms</string>
+    <string name="app_name_splash_screen">Anwendung Splash-Screen</string>
+    <string name="email_subject_feedback"> English Idioms Feedback</string>
+    <string name="email_sent">Die E-Mail wurde versendet!</string>
+    <string name="email_not_sent">Unmöglich, das E-Mail senden!</string>
+    <string name="french_flag">Französische Flagge</string>
+    <string name="game_over_congratulation">Glückwunsch , Sie haben es geschafft!</string>
+    <string name="game_over_feedback">Geben Sie mir ein Feedback!</string>
+    <string name="game_over_text3">Danke fürs spielen!</string>
+    <string name="german_flag">Deutsche Flagge</string>
+    <string name="go_back_to_menu">Gehen Sie zurück zum Menü</string>
+    <string name="email_subject_invite_friends">Versuchen Sie English Idioms! Es ist toll!</string>
+    <string name="italian_flag">Italienische flagge</string>
+    <string name="english_flag">Großbritannien Flagge</string>
+    <string name="next">Nächster</string>
+    <string name="settings">Einstellungen</string>
+    <string name="spanish_flag"> Spanische flagge</string>
+    <string name="start">Start</string>
+    <string name="submit">Einreichen</string>
+    <string name="tell_to_a_friend"> Einem freund sagen</string>
+    <string name="wrong_answer"> Falsche Antwort! </string>
+</resources>
