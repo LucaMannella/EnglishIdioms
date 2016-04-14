@@ -3,6 +3,7 @@
     package="com.lucamannella.englishidioms">
 
     <application
+        android:name="com.lucamannella.englishidioms.MyApplication"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@mipmap/love_idioms"
