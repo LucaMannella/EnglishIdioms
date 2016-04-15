@@ -11,8 +11,6 @@ import android.view.View;
  */
 public class GameOverActivity extends AppCompatActivity {
 
-    private final static String eMail = "luca.mannella@studenti.polito.it";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +23,7 @@ public class GameOverActivity extends AppCompatActivity {
      */
     public void mailMe (View view) {
         String subject = getResources().getString(R.string.email_subject_feedback);
-        Utility.sendEmail(eMail, subject, getResources().getString(R.string.email_feedback_text), this);
+        Utility.sendEmail(getString(R.string.my_mail), subject, getResources().getString(R.string.email_feedback_text), this);
     }
 
     /**

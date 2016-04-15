@@ -15,7 +15,8 @@
         android:layout_alignParentTop="true"
         android:gravity="center_horizontal"
         android:textSize="24sp"
-        android:text="@string/game_over_congratulation" />
+        android:text="@string/game_over_congratulation"
+        style="@style/TextViews" />
 
     <TextView android:id="@+id/center_text_view"
         android:layout_width="match_parent"
@@ -23,7 +24,8 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         android:text="@string/game_over_text2"
-        android:textSize="14sp"/>
+        android:textColor="#00796b"
+        android:textSize="14sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -32,8 +34,9 @@
         android:layout_marginBottom="16dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:textSize="14sp"
-        android:text="@string/game_over_text1" />
+        android:text="@string/game_over_text1"
+        android:textColor="#00796b"
+        android:textSize="14sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -43,7 +46,8 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="@string/game_over_text3"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        style="@style/TextViews" />
 
     <View android:id="@+id/center_bar"
         android:layout_width="1dp"
@@ -60,7 +64,8 @@
         android:layout_alignEnd="@id/center_bar"
         android:layout_marginEnd="8dp"
         android:text="@string/game_over_feedback"
-        android:onClick="mailMe"/>
+        android:onClick="mailMe"
+        style="@style/Buttons" />
     <!-- AlignEnd and marginEnd were added to suppress a warning -->
 
     <Button
@@ -72,6 +77,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/go_back_to_menu"
-        android:onClick="goBackToMenu"/>
+        android:onClick="goBackToMenu"
+        style="@style/Buttons" />
 
 </RelativeLayout>

@@ -20,7 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:textSize="20sp"
-            android:text="@string/rebus_number"/>
+            android:text="@string/rebus_number"
+            style="@style/TextViews" />
 
         <ImageView android:id="@+id/rebus_picture"
             android:layout_width="wrap_content"
@@ -34,7 +35,8 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:textSize="16sp"
-            android:text="@string/rebus_hint" />
+            android:text="@string/rebus_hint"
+            style="@style/TextViews" />
 
         <EditText android:id="@+id/solution_edit_text"
             android:layout_width="match_parent"
@@ -49,7 +51,8 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/submit"
-            android:onClick="checkSolution" />
+            android:onClick="checkSolution"
+            style="@style/Buttons" />
 
         <TextView android:id="@+id/translation_text_view"
             android:layout_width="wrap_content"
@@ -58,7 +61,8 @@
             android:layout_marginBottom="16sp"
             android:text="@string/translation_example"
             android:textSize="20sp"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            style="@style/TextViews" />
 
         <TextView android:id="@+id/explanation_text_view"
             android:layout_width="wrap_content"
@@ -66,7 +70,9 @@
             android:focusable="true"
             android:textSize="14sp"
             android:text="@string/long_example_text"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:textColor="#00796b"
+            style="@style/TextViews" />
 
         <Button android:id="@+id/next_button"
             android:layout_width="wrap_content"
@@ -74,7 +80,8 @@
             android:layout_marginTop="16dp"
             android:text="@string/next"
             android:visibility="gone"
-            android:onClick="nextActivity" />
+            android:onClick="nextActivity"
+            style="@style/Buttons" />
 
     </LinearLayout>
 
