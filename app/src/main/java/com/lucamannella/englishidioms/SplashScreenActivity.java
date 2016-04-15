@@ -18,6 +18,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // this runnable object will call the main activity after the set time.
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
