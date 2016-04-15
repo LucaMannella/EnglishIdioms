@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string-array name="rebus_explenation">
-		<item>text here!</item>
-		<item>text here!</item>
-		<item>text here!</item>
-		<item>text here!</item>
-		<item>text here!</item>
-	</string-array>
-	
+
 	<string-array name="rebus_solutions">
 		<item>It is raining cats and dogs</item>
 		<item>Cut your teeth</item>
@@ -22,6 +15,28 @@
 		<item>2 – 2 – 3 – 4 – 4</item>
 		<item>3 – 3 – 4</item>
 		<item>2 – 4 – 2 – 4</item>
+	</string-array>
+
+	<string-array name="rebus_explenation">
+		<item>This expression means Raining very heavily.
+We don’t know for certain. Etymologists—people who study the origins of words—have suggested a variety of mythological and literal explanations for why people say “it’s raining cats and dogs” to describe a heavy downpour.  Here are some of the popular theories:
+Odin, the Norse god of storms, was often pictured with dogs and wolves, which were symbols of wind. Witches, who supposedly rode their brooms during storms, were often pictured with black cats, which became signs of heavy rain for sailors.  Therefore, “raining cats and dogs” may refer to a storm with wind (dogs) and heavy rain (cats).
+“Cats and dogs” may come from the Greek expression cata doxa, which means “contrary to experience or belief.” If it is raining cats and dogs, it is raining unusually or unbelievably hard.
+“Cats and dogs” may be a perversion of the now obsolete word catadupe.  In old English, catadupe meant a cataract or waterfall.  A version of catadupe existed in many old languages.In Latin, for example, catadupa. was borrowed from the classical Greek κατάδουποι, which referred to  the cataracts of the Nile River.  So, to say it’s raining “cats and dogs” might be to say it’s raining waterfalls.
+A false theory stated that cats and dogs used to cuddle into thatch roofs during storms and then be washed out during heavy rains. However, a properly maintained thatch roof is naturally water resistant and slanted to allow water to run off.  In order to slip off the roof, the animals would have to be lying on the outside—an unlikely place for an animal to seek shelter during a storm. </item>
+		<item>To get your first experience of a particular type of work and learn the basic skills.
+When a baby\'s teeth first appear, what is really cut is the gums as the teeth push through them. The Oxford English Dictionary gives \"cut\" in this sense, with \"tooth\" or \"teeth\" as the object, in quotations going back to 1677. Babies and puppies chew on things when they are \"cutting teeth.\" The way I\'ve heard the expression is in reference to how one gained experience. \"I \'cut my teeth on\' writing funeral notices for a newspaper.\"
+Other toothsome expressions: \"to cut one\'s eyeteeth\" or \"to cut one\'s wisdom teeth.\" Mr. Funk says the first means: \"To acquire wisdom; to learn the ways of the world. An eyetooth is a canine tooth, the third from the center in the upper jaw. The expression is somewhat literal, for the implication is that by the time a person has got his permanent set of canine teeth, has reached the age of twelve or fourteen, he has passed out of babyhood and has reached years of discretion. This working of the saying appears to have originated in the United States, first recorded in 1870 by the essayist, Ralph Waldo Emerson, though undoubtedly long in use before that date. The British version, dating to the early eighteenth century, is \'to have one\'s eyeteeth\' or \'to have one\'s eyeteeth about one.\' The usage differs slightly, carrying the implication of alertness against chicanery; that is, to use one\'s knowledge and experience in one\'s dealings.\" From \"2107 Curious Word Origins, Sayings and Expressions from White Elephants to a Song and Dance\" by Charles Earle Funk (Galahad Book, New York, 1993). A second source says: \"If wisdom does come with age, \'to cut one\'s wisdom teeth\' is more appropriate, for these are cut at the ages of 17 to 25 and up to age 50! These molars have been known as \'dentes sapientiae,\' \'teeth of wisdom,\' since the time of Hippocrates. </item>
+		<item>The phrase ‘On the Same Page’ means to be thinking in a similar fashion, to have the same amount of knowledge, or to have the same kind of understanding about a situation as others do, to understand and agree with what is being done or suggested.
+Though the origin of the idiom \'on the same page\' is sometimes attributed to choral singing, when all singers needed to be on the same page, it is much more likely that this term can be attributed to classes and business meetings when copies of a single item are used by all members, and that all need to be reading from the same page in order to understand what is being discussed. </item>
+		<item>Get extremely angry, enraged. This expression is actually a reduced version of an older 17th Century British Englilsh phrase, to be “up on the house roof/roof top” with the same sense of being enraged. An alternate version ius “hit the ceiling” and is similar to “blow your top”. “flip your lid”, and “blow/pop a gasket”.
+To strike the roof of your house, either with your head because you’re jumping up from anger, or your hand, or with some tool or implement, such as the giant mallet seen in the hands of Mr. Bear in the cartoon.</item>
+		<item>\'As X as Y\' similes usually compare someone or something with some property of an item that is well-known to exhibit that property; for example: Her dress was as white as snow. Alike as two peas in a pod. In this case things are a little different. Gold isn\'t well-known to be either well-behaved or obedient. Here \'good\' means genuine, not counterfeit.
+When banknotes (known as bills in the USA and some other countries) were first introduced they weren\'t considered to be money in the sense we now think of them, but were promissory notes or IOUs. Gold or silver was real money as it had intrinsic value, whereas notes were just promises to pay in coin. UK banknotes, like those of many other countries, still include messages such as this, signed by the Chief Cashier of the Bank of England: \'I promise to pay the bearer on demand the sum of ten pounds\'.
+So, \'as good as gold\' ought really to be \'as genuine as gold\', but the more usual meaning of \'good\' has taken precedence over the years and left us with the usual meaning of the phrase. The original meaning is recorded in this piece from The Old Bailey records of a trial in October 1827, reported that month in The Morning Post:
+Child and the others then went with him to another house in Chancery Lane; they there gave him a paper, which they said was \"as good as gold\", and would be paid on Monday next.
+The phrase is used several times in literature in the following years. The change from the use of \'good\', as meaning \'genuine\' to \'good\', as meaning \'well-behaved\' didn\'t take long. Charles Dickens used it in the latter sense in A Christmas Carol, 1843:
+\"And how did little Tim behave?\" asked Mrs. Cratchit…   "As good as gold," said Bob, "and better.</item>
 	</string-array>
 	
 </resources>
