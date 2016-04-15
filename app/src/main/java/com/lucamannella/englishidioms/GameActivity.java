@@ -1,13 +1,12 @@
 package com.lucamannella.englishidioms;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.KeyListener;
-import android.view.KeyEvent;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ScrollView;
@@ -21,47 +20,32 @@ import android.widget.Toast;
  */
 public class GameActivity extends AppCompatActivity {
 
-    int vet[] = {R.drawable.france_flag,
-            R.drawable.italy_flag,
-            R.drawable.germany_flag, R.drawable.spain_flag};
+    private String[] rebusHints;
+    private String[] solutions;
+    private String[] explanations;
 
-    String rebusHints[] = {"5", "8 - 3 - 5", "6 - 6", "6"};
-    String solutions[] = {"Schifo", "Campioni del mondo", "mangia crauti", "fiesta"};
+    int rebus[] = {R.drawable.france_flag,
+            R.drawable.italy_flag,
+            R.drawable.germany_flag, R.drawable.spain_flag, R.drawable.english_flag};
+
     int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        ((ImageView)findViewById(R.id.rebus_picture)).setImageResource( vet[i] );
+
+        Resources resources = getResources();
+        // retrieving the arrays from the xml file
+        rebusHints = resources.getStringArray(R.array.rebus_hints);
+        solutions = resources.getStringArray(R.array.rebus_solutions);
+        explanations = resources.getStringArray(R.array.rebus_explenation);
+
+        ((TextView) findViewById(R.id.rebus_number_text_view)).setText("Rebus #1 of "+solutions.length);
+        ((ImageView)findViewById(R.id.rebus_picture)).setImageResource( rebus[i] );
         ((TextView) findViewById(R.id.rebus_hint_text_view)).setText( rebusHints[i] );
     }
 
-    /**
-     * This method should be called on the onCreate if you want that the solution will checked
-     * after a modification on the EditText.
-     * Actually it is not used.
-     */
-    private void checkSolutionOnSave() {
-        EditText editText = ((EditText) findViewById(R.id.solution_edit_text));
-
-        if (editText != null)
-            // here I create an editorActionListener that response when the editText content changes
-            editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-                /**
-                 * This method calls the checkSolution() method.
-                 */
-                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER))
-                            || (actionId == EditorInfo.IME_ACTION_DONE)) {
-
-                        checkSolution(v); //v is not used
-                    }
-                    return false;
-                }
-            });
-        return;
-    }
 
     /**
      * This method checks if the solution is right or not.
@@ -72,7 +56,14 @@ public class GameActivity extends AppCompatActivity {
         String solution = solutionEditText.getText().toString().trim();
 
         if(solution.equalsIgnoreCase(solutions[i])) {
-            findViewById(R.id.explanation_text_view).setVisibility(View.VISIBLE);
+            TextView translation = (TextView)findViewById(R.id.translation_text_view);
+            translation.setText(solutions[i]);
+            translation.setVisibility(View.VISIBLE);
+
+            TextView explanation = (TextView)findViewById(R.id.explanation_text_view);
+            explanation.setText(explanations[i]);
+            explanation.setVisibility(View.VISIBLE);
+
             findViewById(R.id.next_button).setVisibility(View.VISIBLE);
 
             solutionEditText.setTag(solutionEditText.getKeyListener());
@@ -83,9 +74,10 @@ public class GameActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     ScrollView scrollView = (ScrollView)findViewById(R.id.game_scroll_view);
-                    TextView textView = (TextView)findViewById(R.id.explanation_text_view);
+                    View targetView = findViewById(R.id.submit_button);
 
-                    scrollView.scrollTo(0, textView.getBottom());
+                    if(scrollView != null && targetView != null)
+                        scrollView.scrollTo(0, targetView.getBottom());
                 }
             });
         }
@@ -99,6 +91,7 @@ public class GameActivity extends AppCompatActivity {
      * @param view - The button that was pressed to start this method.
      */
     public void nextActivity(View view) {
+        findViewById(R.id.translation_text_view).setVisibility(View.GONE);
         findViewById(R.id.explanation_text_view).setVisibility(View.GONE);
         findViewById(R.id.next_button).setVisibility(View.GONE);
 
@@ -108,9 +101,21 @@ public class GameActivity extends AppCompatActivity {
         findViewById(R.id.submit_button).setClickable(true);
 
         i++;
-        if(i < vet.length) {
-            ((ImageView) findViewById(R.id.rebus_picture)).setImageResource(vet[i]);
+        if(i < solutions.length) {
+            ((TextView) findViewById(R.id.rebus_number_text_view)).setText("Rebus #"+(i+1)+" of "+ solutions.length);
+            ((ImageView)findViewById(R.id.rebus_picture)).setImageResource(rebus[i]);
             ((TextView) findViewById(R.id.rebus_hint_text_view)).setText(rebusHints[i]);
+
+            // This Runnable object scroll up to the top the text view.
+            new Handler().post(new Runnable() {
+                @Override
+                public void run() {
+                    ScrollView scrollView = (ScrollView)findViewById(R.id.game_scroll_view);
+
+                    if(scrollView != null)
+                        scrollView.fullScroll(ScrollView.FOCUS_UP);
+                }
+            });
         }
         else {  //Game completed! go the game over activity!
             Intent intent = new Intent(this, GameOverActivity.class);
