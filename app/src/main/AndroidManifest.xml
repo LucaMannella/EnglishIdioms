@@ -23,9 +23,11 @@
 
         <activity android:name=".MainActivity" />
 
-        <activity android:name=".LanguageActivity" />
+        <activity android:name=".LanguageActivity"
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".GameOverActivity" />
+        <activity android:name=".GameOverActivity"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".GameActivity"
