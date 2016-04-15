@@ -8,23 +8,24 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:orientation="vertical"  >
 
-        <TextView
+        <TextView android:id="@+id/rebus_number_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:textSize="20sp"
-            android:text="Rebus #1"/>
+            android:text="@string/rebus_number"/>
 
         <ImageView android:id="@+id/rebus_picture"
             android:layout_width="300dp"
-            android:layout_height="300dp" />
+            android:layout_height="300dp"
+            android:contentDescription="@string/rebus_picture" />
 
         <TextView android:id="@+id/rebus_hint_text_view"
             android:layout_width="wrap_content"
@@ -32,7 +33,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:textSize="16sp"
-            android:text="Rebus Hint" />
+            android:text="@string/rebus_hint" />
 
         <EditText android:id="@+id/solution_edit_text"
             android:layout_width="match_parent"
@@ -46,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Submit"
+            android:text="@string/submit"
             android:onClick="checkSolution" />
 
         <TextView android:id="@+id/translation_text_view"
@@ -54,8 +55,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16sp"
             android:layout_marginBottom="16sp"
-            android:text="Translation here!"
-            android:textSize="20dp"
+            android:text="@string/translation_example"
+            android:textSize="20sp"
             android:visibility="gone"/>
 
         <TextView android:id="@+id/explanation_text_view"
@@ -63,19 +64,14 @@
             android:layout_height="wrap_content"
             android:focusable="true"
             android:textSize="14sp"
-            android:text="Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
-Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
-Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
-Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
-Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here
-Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here"
+            android:text="@string/long_example_text"
             android:visibility="gone" />
 
         <Button android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Next"
+            android:text="@string/next"
             android:visibility="gone"
             android:onClick="nextActivity" />
 
