@@ -22,11 +22,11 @@ public class GameActivity extends AppCompatActivity {
 
     private String[] rebusHints;
     private String[] solutions;
+    private String[] translations;
     private String[] explanations;
 
-    int rebus[] = {R.drawable.france_flag,
-            R.drawable.italy_flag,
-            R.drawable.germany_flag, R.drawable.spain_flag, R.drawable.english_flag};
+    int rebus[] = {R.drawable.raining_cats_dogs, R.drawable.cut_your_teeth,
+            R.drawable.same_page, R.drawable.hit_the_roof, R.drawable.as_good_as_gold};
 
     int i = 0;
 
@@ -39,6 +39,7 @@ public class GameActivity extends AppCompatActivity {
         // retrieving the arrays from the xml file
         rebusHints = resources.getStringArray(R.array.rebus_hints);
         solutions = resources.getStringArray(R.array.rebus_solutions);
+        translations = resources.getStringArray(R.array.translations);
         explanations = resources.getStringArray(R.array.rebus_explenation);
 
         ((TextView) findViewById(R.id.rebus_number_text_view)).setText("Rebus #1 of "+solutions.length);
@@ -49,27 +50,33 @@ public class GameActivity extends AppCompatActivity {
 
     /**
      * This method checks if the solution is right or not.
-     * @param view - The button that was pressed to start this method.
+     * @param submitButton - The button that was pressed to start this method.
      */
-    public void checkSolution(View view) {
+    public void checkSolution(View submitButton) {
         EditText solutionEditText = (EditText)findViewById(R.id.solution_edit_text);
         String solution = solutionEditText.getText().toString().trim();
 
         if(solution.equalsIgnoreCase(solutions[i])) {
+            // the EditText is no more editable
+            solutionEditText.setTag(solutionEditText.getKeyListener());
+            solutionEditText.setKeyListener(null);
+            // submit button no clickable anymore
+            submitButton.setClickable(false);
+
+            // filling and showing the translation TextView
             TextView translation = (TextView)findViewById(R.id.translation_text_view);
-            translation.setText(solutions[i]);
+            translation.setText(translations[i]);
             translation.setVisibility(View.VISIBLE);
 
+            // filling and showing the explanation TextView
             TextView explanation = (TextView)findViewById(R.id.explanation_text_view);
             explanation.setText(explanations[i]);
             explanation.setVisibility(View.VISIBLE);
 
+            // showing the next button
             findViewById(R.id.next_button).setVisibility(View.VISIBLE);
 
-            solutionEditText.setTag(solutionEditText.getKeyListener());
-            solutionEditText.setKeyListener(null);
-            findViewById(R.id.submit_button).setClickable(false);
-
+            // this Runnable object will scroll the ScrollView to show the explanation
             new Handler().post(new Runnable() {
                 @Override
                 public void run() {
@@ -81,30 +88,35 @@ public class GameActivity extends AppCompatActivity {
                 }
             });
         }
-        else {
+        else {  // wrong answer
             Toast.makeText(this, R.string.wrong_answer, Toast.LENGTH_SHORT).show();
         }
     }
 
     /**
      * This method updates the GameActivity to the next rebus.
-     * @param view - The button that was pressed to start this method.
+     * @param nextButton - The button that was pressed to start this method.
      */
-    public void nextActivity(View view) {
-        findViewById(R.id.translation_text_view).setVisibility(View.GONE);
-        findViewById(R.id.explanation_text_view).setVisibility(View.GONE);
-        findViewById(R.id.next_button).setVisibility(View.GONE);
-
-        EditText solutionEditText = (EditText) findViewById(R.id.solution_edit_text);
-        solutionEditText.setKeyListener((KeyListener) solutionEditText.getTag());
-        solutionEditText.setText("");
-        findViewById(R.id.submit_button).setClickable(true);
-
+    public void nextActivity(View nextButton) {
         i++;
-        if(i < solutions.length) {
+        if(i < solutions.length) {  // if there are other rebus
+            // hiding the views related to the solutions
+            findViewById(R.id.translation_text_view).setVisibility(View.GONE);
+            findViewById(R.id.explanation_text_view).setVisibility(View.GONE);
+            nextButton.setVisibility(View.GONE);
+
+            // the solution EditText is emptied and again editable
+            EditText solutionEditText = (EditText) findViewById(R.id.solution_edit_text);
+            solutionEditText.setText("");
+            solutionEditText.setKeyListener((KeyListener) solutionEditText.getTag());
+
+            // the rebus is updated
             ((TextView) findViewById(R.id.rebus_number_text_view)).setText("Rebus #"+(i+1)+" of "+ solutions.length);
             ((ImageView)findViewById(R.id.rebus_picture)).setImageResource(rebus[i]);
             ((TextView) findViewById(R.id.rebus_hint_text_view)).setText(rebusHints[i]);
+
+            // the submit button is clickable again
+            findViewById(R.id.submit_button).setClickable(true);
 
             // This Runnable object scroll up to the top the text view.
             new Handler().post(new Runnable() {
