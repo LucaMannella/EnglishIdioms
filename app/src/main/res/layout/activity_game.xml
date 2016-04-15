@@ -23,8 +23,9 @@
             android:text="@string/rebus_number"/>
 
         <ImageView android:id="@+id/rebus_picture"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/raining_cats_dogs"
             android:contentDescription="@string/rebus_picture" />
 
         <TextView android:id="@+id/rebus_hint_text_view"
