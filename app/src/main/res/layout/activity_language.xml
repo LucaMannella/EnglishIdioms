@@ -12,50 +12,60 @@
     android:orientation="vertical"
     tools:context="com.lucamannella.englishidioms.LanguageActivity" >
 
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
         android:src="@drawable/english_flag"
         android:onClick="setEnglish"
         android:layout_weight="1"
         android:contentDescription="@string/english_flag" />
 
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
         android:src="@drawable/italy_flag"
         android:onClick="setItalian"
         android:layout_weight="1"
         android:contentDescription="@string/italian_flag" />
 
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
         android:src="@drawable/france_flag"
         android:onClick="setFrench"
         android:layout_weight="1"
         android:contentDescription="@string/french_flag" />
 
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
         android:src="@drawable/spain_flag"
         android:onClick="setSpanish"
         android:layout_weight="1"
         android:contentDescription="@string/spanish_flag" />
 
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
         android:src="@drawable/germany_flag"
         android:onClick="setGerman"
         android:layout_weight="1"
