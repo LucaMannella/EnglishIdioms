@@ -1,0 +1,11 @@
+5 English Idioms that you have to know
+5 Modi di dire inglesi che dovresti sapere
+
+La mia applicazione nasce con l'idea di insegnare all'utente 5 modi di dire inglesi con relativa traduzione.
+
+L'app è pensata per permettere all'utente di scegliere la lingua in cui vuole visualizzare la traduzione e le spiegazioni correlate.
+La spiegazione e le curiosità riguardo all'origine del modo di dire sono solitamente riferiti al modo di dire tradotto.
+Per rendere l'esperienza didattica più coinvolgente l'applicazione è pensata tramite gioco a 5 livelli; in ogni livello l'utente deve risolvere un rebus per scoprire il modo di dire.
+
+Sebbene l'applicazione sia stata pensata come multi-language, attualmente può considerarsi in stato prototipale in quanto le uniche lingue completamente supportate (per le quali è disponibile la traduzione del modo di dire e la relativa spiegazione) sono solo l'italiano e l'inglese.
+Per completare l'applicazione in maniera professionale mi avvarrei dell'aiuto di un traduttore.
