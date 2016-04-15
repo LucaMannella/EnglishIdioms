@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="rebus_explenation">
+		<item>text here!</item>
+		<item>text here!</item>
+		<item>text here!</item>
+		<item>text here!</item>
+		<item>text here!</item>
+	</string-array>
+	
+	<string-array name="rebus_solutions">
+		<item>It is raining cats and dogs</item>
+		<item>Cut your teeth</item>
+		<item>Be on the same page</item>
+		<item>Hit the roof</item>
+		<item>As good as gold</item>
+	</string-array>
+	
+	<string-array name="rebus_hints">
+		<item>2 – 2 – 7 – 4 – 3 – 4</item>
+		<item>3 – 4 – 5</item>
+		<item>2 – 2 – 3 – 4 – 4</item>
+		<item>3 – 3 – 4</item>
+		<item>2 – 4 – 2 – 4</item>
+	</string-array>
+	
+</resources>
+

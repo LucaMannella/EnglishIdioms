@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">English Idioms</string>
     <string name="app_name_splash_screen">English Idioms Splash Screen</string>
-    <string name="email_invite_friends_text">Hi! I tried English Idioms... It\'s a very cool application! I really suggest to you to try it! Come on, go to the Google Play Store!</string>
+    <string name="email_invite_friends_text">Hi! I tried English Idioms… It\'s a very cool application! I really suggest to you to try it! Come on, go to the Google Play Store!</string>
     <string name="email_feedback_text">Hi!<BR> </BR>I tried your application and I want to say to you:<BR> </BR></string>
     <string name="email_not_sent">Impossible to send the email!</string>
     <string name="email_sent">The e-mail was sent!</string>
@@ -21,11 +21,6 @@
     <string name="game_over_congratulation">Congratulation, you did it!</string>
     <string name="game_over_feedback">Give me a feedback!</string>
     <string name="go_back_to_menu">Go back to menu</string>
-    <string name="explenation1"></string>
-    <string name="explenation2"></string>
-    <string name="explenation3"></string>
-    <string name="explenation4"></string>
-    <string name="explenation5"></string>
     <string name="italian_language_set">Italian language successfully set!</string>
     <string name="next">Next</string>
     <string name="submit">Submit</string>
@@ -33,4 +28,8 @@
     <string name="english_flag">United Kingdom Flag</string>
     <string name="locale_lang">MyLanguage</string>
     <string name="language_not_yet_available">Unfortunately this language is not yet completely available! :(</string>
+    <string name="rebus_number">Rebus Number</string>
+    <string name="rebus_hint">Rebus Hint</string>
+    <string name="long_example_text">Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here Put explanation here</string>
+    <string name="rebus_picture">Rebus picture</string>
 </resources>
